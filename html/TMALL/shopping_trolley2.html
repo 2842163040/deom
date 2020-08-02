@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            width: 100%;
+            height: 100%;
+            /*display: flex;*/
+            /*flex-wrap: wrap;*/
+            background-color: rgba(54, 54, 54, 0.29);
+
+        }
+        #wrap .head{
+
+            width: 100%;
+            height: 177px;
+            background-color: #ff9269;
+        }
+        #wrap .head .head1{
+
+
+        }
+        #wrap .head .head1 h3{
+           display: inline-block;
+           padding: 12px 0px 0px 12px;
+            color: #FFFFFF;
+        }
+        #wrap .head .head1 span{
+            display: inline-block;
+            padding: 12px 0px 0px 0px;
+            margin-left: 55%;
+            color: #FFFFFF;
+        }
+        #wrap .head p{
+
+            color: #FFFFFF;
+            font-size: 12px;
+            padding: 10px 0px 0px 12px;
+        }
+        #wrap #commodity{
+
+            width: 95%;
+            /*height: 1000px;*/
+            margin-left: 2%;
+
+
+        }
+        #wrap #commodity .commodity{
+            margin-top: 3%;
+            width: 100%;
+            height: 146px;
+            /*border: solid 1px red;*/
+            background-color: white;
+
+            border-radius: 10px;
+
+            position: relative;
+            top: -80px;
+        }
+        #wrap #commodity .commodity .commodity1{
+
+            width: 100%;
+            height: 44px;
+            /*border: solid 1px red;*/
+            display: flex;
+
+            
+        }
+        #wrap #commodity .commodity .commodity1 div{
+            margin-top: 2%;
+            margin-left: 2%;
+
+        }
+        #wrap #commodity .commodity .commodity1 img{
+            margin-left: 2%;
+            height: 40%;
+            width: 5%;
+            margin-top: 2%;
+
+        }
+        #wrap #commodity .commodity .commodity1 span{
+
+            margin-top: 2%;
+            margin-left: 2%;
+            color: #333333;
+            font-size: 13%;
+        }
+        #wrap #commodity .commodity .commodity2{
+
+            width: 100%;
+            height: 100px;
+            /*border: solid 1px red;*/
+            display: flex;
+
+
+        }
+        #wrap #commodity .commodity .commodity2 .yuan{
+
+            margin-top: 8%;
+            margin-left: 3%;
+
+        }
+        #wrap #commodity .commodity .commodity2 img{
+            width:20%;
+            height: 80%;
+            margin-left: 2%;
+
+        }
+        #wrap #commodity .commodity .commodity2 div{
+            width:90%;
+
+
+        }
+        #wrap #commodity .commodity .commodity2 div span
+        {/*多行省略号*/
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+            color: #333333;
+            font-size: 14px;
+        }
+        #wrap #commodity .commodity .commodity2 div div{
+
+            float: left;
+
+        }
+        #wrap #commodity .commodity .commodity2 div div .decrease{
+
+            width: 10%;
+            height:22px ;
+            color: #cfcfcf;
+            background-color: #f5f5f5;
+            /*font-size: 20px;*/
+            text-align: center;
+            float: right;
+            margin-top: -5%;
+        }
+        #wrap #commodity .commodity .commodity2 div div  .number{
+            background-color: #f5f5f5;
+            width:10% ;
+            height:18px ;
+            /*font-size: 20px;*/
+            text-align: center;
+            float: right;
+            margin-top: -5%;
+        }
+
+        #wrap #commodity .commodity .commodity2 div div .increase{
+            color: #000000;
+            background-color: #f5f5f5;
+            width: 10%;
+            height:22px ;
+            /*font-size: 20px;*/
+            text-align: center;
+            float: right;
+            margin-top: -5%;
+        }
+
+        #wrap #recommend{
+/*display: flex;*/
+            /*margin: auto;*/
+            text-align: center;
+        }
+        #wrap #recommend img{
+            width: 50%;
+            height: 20px;
+
+        }
+        #wrap #particulars {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /*align-content: center;*/
+        }
+
+        #wrap #particulars >div{
+           background-color: whitesmoke;
+              width: 45%;
+             height: 260px;
+            /*border: solid 1px red;*/
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+            border-radius: 10px;
+
+        }
+        #wrap #particulars div img{
+            width:100%;
+         
+
+
+        }
+        #wrap #particulars div span{
+            font-size: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+
+        }
+        #wrap #particulars div div{
+           width: 100%;
+            height: 40px;
+        }
+
+        #wrap #particulars div div span{
+          display: inline-block;
+            margin-top: 5%;
+             color: #ff5050;
+        }
+        #wrap #particulars div div p{
+            display: inline-block;
+            margin-left: 1%;
+            margin-top: -2%;
+            color: #999999;
+        }
+        #wrap  #all {
+            background-color: #FFFFFF;
+            display: flex;
+            height: 54px;
+            width: 100%;
+            text-align: center;
+        }
+        #wrap  #all>div{
+
+            margin-left: 4%;
+            margin-top: 4%;
+
+
+        }
+        #lianjie{
+            border: solid 1px #e6e6e6;
+            display: flex;
+
+       height: 43px;
+        }
+        #lianjie span{
+            flex: 1;
+            margin: auto;
+
+            font-size:12px ;
+             color: #5d656b;
+            text-align: center;
+
+        }
+        #lianjie span .iconfont{
+
+            width: 22px;
+            height: 100%;
+            font-size: 20px;
+        }
+
+        #close{
+
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            background-color: #FFFFFF;
+        }
+        a{
+            text-decoration: none;
+            color:#5d656b;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <!--购物车-->
+    <div class="head">
+
+        <div class="head1">
+            <h3>购物车（4）</h3>  <span>管理</span>
+            <p style="float: none"></p>
+        </div>
+
+        <p>共4件宝贝</p>
+
+
+       </div>
+
+<!-- 商品-->
+    <div id="commodity">
+
+       <div class="commodity">
+           <!--顶部-->
+           <div class="commodity1">
+            <div style="height: 21px;width: 21px;border-radius: 50%;border: solid 1px #051b28"></div>
+               <img src="https://gw.alicdn.com/tfs/TB1hDVeDMTqK1RjSZPhXXXfOFXa-32-32.png_40x40q90_.webp">
+               <span>墨香馨语图书专营 ></span>
+           </div>
+           <!--底部-->
+           <div class="commodity2">
+
+               <div class="yuan" style="height: 21px;width: 24px;border-radius: 50%;border: solid 1px #051b28"></div>
+               <img src="//gw.alicdn.com/bao/uploaded/i2/3081249032/O1CN01Iu7sfG2GahpfPCWkF_!!3081249032.jpg_80x80.jpg">
+               <div>
+                   <span>全5册企业领导经营管理学方面的书籍 领导力者管理的成功法则 识人用制度管理三要不懂带团队你就自己累阿尔泰成功管理类畅销书籍 </span>
+                   <div style="">
+                       <span>￥25.5</span>
+                       <button class="decrease">-</button>
+                       <input class="number" type="number" value="1">
+                       <button class="increase">+</button>
+                   </div>
+               </div>
+
+
+       </div>
+
+
+
+
+
+    </div>
+
+       <div class="commodity">
+            <!--顶部-->
+            <div class="commodity1">
+                <div style="height: 21px;width: 21px;border-radius: 50%;border: solid 1px #051b28"></div>
+                <img src="https://gw.alicdn.com/tfs/TB1hDVeDMTqK1RjSZPhXXXfOFXa-32-32.png_40x40q90_.webp">
+                <span>墨香馨语图书专营 ></span>
+            </div>
+            <!--底部-->
+            <div class="commodity2">
+
+                <div class="yuan" style="height: 21px;width: 24px;border-radius: 50%;border: solid 1px #051b28"></div>
+                <img src="../imgs/g2.jpg">
+                <div>
+                    <span>全5册企业领导经营管理学方面的书籍 领导力者管理的成功法则 识人用制度管理三要不懂带团队你就自己累阿尔泰成功管理类畅销书籍 </span>
+                    <div style="">
+                        <span>￥25.5</span>
+                        <button class="decrease">-</button>
+                        <input class="number" type="number" value="1">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+</div>
+
+    <div id="recommend" style="">
+
+        <img src="https://img.alicdn.com/tfs/TB1V2eQrKSSBuNjy0FlXXbBpVXa-966-114.png"></div>
+    <!--推荐商品-->
+    <!--<div id="recommend"></div>-->
+    <div id="particulars">
+        <div>
+            <img src="//gw.alicdn.com/bao/uploaded/i1/2191895982/O1CN015uO6M81u3nqyS6RFd_!!0-item_pic.jpg_500x500q90.jpg_.webp">
+            <span>AirPods保护套AirPodsPro耳机壳airpods2苹果无线蓝牙硅胶可爱软硬盒ins2/3代潮牌ipods创意1二代通用三代pro</span>
+             <div> <span>￥15.8</span> <p>999人已购买</p></div>
+        </div>
+        <div>
+            <img src="//gw.alicdn.com/bao/uploaded/i1/1037477422/O1CN01cdOyvb24hKBETWLHh_!!2-item_pic.png_500x500q90.jpg_.webp">
+            <span>2册】高效管理+深度管理 松下等世界500强公司的管理培训指南 管理方面的书籍 创业 企业管理 商业书籍管理类书籍</span>
+            <div> <span>￥68</span> <p>62人已购买</p></div>
+        </div>
+
+        <div>
+            <img src="//gw.alicdn.com/bao/uploaded/i3/750684765/O1CN01ANHJCW1l4PrNdiFbH_!!0-item_pic.jpg_500x500q90.jpg_.webp">
+            <span>盛耳黑豆500g绿芯黑豆五谷杂粮绿心小黑豆黑小豆醋泡东北农家自产</span>
+            <div> <span>￥ 9.9</span> <p>238人已购买</p></div>
+        </div>
+        <div>
+            <img src="//gw.alicdn.com/bao/uploaded/i1/2204181482686/O1CN01paxjP81ViERhZ5Zgg_!!0-item_pic.jpg_500x500q90.jpg_.webp">
+            <span>日本冰箱除味剂 除臭剂去除异味活性炭盒非杀菌消毒家用去味神器</span>
+            <div> <span>￥ 16.8</span> <p>684人已购买</p></div>
+        </div>
+
+    </div>
+
+    <!--结算-->
+    <div id="close">
+        <div id="all">
+        <div style="height: 21px;width: 21px;border-radius: 50%;border: solid 1px #051b28"></div> <div>全选</div>
+
+            <div style="font-size: 15px;margin-left: 30%">合计：<span style="color: red;font-size: 15px">￥0</span></div>
+            <div style="margin-top: 2%; width:84px;height: 31px; background-color:rgba(241,52,25,0.53) ;border-radius: 20px;"><div style="margin-top: 6%;margin-left: 2%"><span style="color:#FFFFFF80 ">结算（0）</span></div></div>
+
+        </div>
+
+
+        <div id="lianjie">
+
+           <span> <a href="index.html"><span class="iconfont">&#xe60d;</span>  <br>首页</a></span>
+           <span> <span  class="iconfont">&#xe63b;</span><br> 购物车</span>
+            <span>   <a href="order_list.html"><span  class="iconfont">&#xe6b9;</span><br> 订单列表 </a></span>
+            <span>   <span  class="iconfont">&#xe62f;</span><br> 淘宝</span>
+            <span>  <span  class="iconfont">&#xe626;</span> <br>更多</span>
+
+        </div>
+
+
+
+    </div>
+    <div style="width: 100%;height: 100px"></div>
+
+</div>
+</body>
+</html>

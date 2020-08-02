@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css">
+
+</head>
+
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+
+       }
+           #wrap{
+
+             background-color: rgba(220, 220, 220, 0.38);
+           }
+       #wrap #head{
+
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+       }
+       #wrap #head ul{
+            list-style: none;
+            display: flex;
+            width: 100%;
+
+
+      text-align: center;
+        }
+        #wrap #head ul li{
+            padding: 10px;
+
+            flex: 1;
+            height: 20px;
+            background-color: #FFFFFF;
+
+
+        }
+       #wrap #seek{
+
+           display: flex;
+           margin-top: 4%;
+
+       }
+       #wrap #seek input{
+           border: inherit;
+           width: 70%;
+           height: 26px;
+           margin-left: 3%;
+           border-radius: 20px;
+           color: #FFFFFF;
+           text-align: left;
+           /*text-align: start;*/
+       }
+       #wrap #seek div{
+           background-color: #ff0000;
+           font-size: 14px;
+           width: 20%;
+           text-align: center;
+           height: 26px;
+           margin-left: 2%;
+           border-radius: 20px;
+           color: #FFFFFF;
+
+
+       }
+       #wrap #body .one{
+           background-color: #FFFFFF;
+           width:95%;
+           margin: auto;
+           margin-top: 3%;
+           border-radius: 10px;
+       }
+
+       #wrap #body .one .top {
+
+           display: flex;
+           height: 47px;
+           margin: auto;
+           text-align: center;
+       }
+       #wrap #body .one .top div{
+           height: 47px;
+
+
+       }
+       #wrap #body .one .top div img{
+           width: 12%;
+           height: 36%;
+           margin-top: 1%;
+
+       }
+       #wrap #body .one .top div span{
+
+          text-align: center;
+           margin-left: 4%;
+           color: #000000;
+           font-size: 12px;
+       }
+       #wrap #body .one .top div:nth-child(2){
+
+           font-size: 12px;
+           color: #ff5000;
+           margin-top: 1%;
+           margin-left: 45%;
+       }
+       #wrap #body .one .body1{
+
+           display: flex;
+       }
+
+       #wrap #body .one .body1 img{
+           width: 25%;
+           margin-left: 6%;
+       }
+       #wrap #body .one .body1 div span{
+           font-size: 12px;
+           width:170px ;
+           color: #333333;
+          /*多行省略号*/
+           display: -webkit-box;
+           -webkit-box-orient: vertical;
+           -webkit-line-clamp: 2;
+           overflow: hidden;
+
+       }
+       #wrap #body .one .body2{
+
+           margin-top: 3%;
+           margin-left: 20%;
+
+       }
+       #wrap #body .one .body3 {
+           display: flex;
+
+       }#wrap #body .one .body3 span{
+
+           margin-left: 50%;
+           font-size: 12px;
+           color: #999999;
+               }
+       #wrap #body .one .body3 span:nth-child(2){
+           margin-left: 1%;
+           font-size: 12px;
+           color: #333333;
+       }
+       #wrap #body .one .body4{
+
+           display: flex;
+       }
+       #wrap #body .one .body4 div{
+           flex: 1;
+           text-align: center;
+           border: solid 1px #333333;
+           margin-left: 1%;
+           margin-right: 1%;
+           width: 30%;
+           margin-top: 5%;
+           margin-bottom: 4%;
+           border-radius: 10px;
+           font-size: 13px;
+           color: #333333;
+
+
+       }#wrap #body .one .body4 div:nth-child(1){
+
+
+           border: none;
+               }
+       #wrap .bootom{
+
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: #FFFFFF;
+
+       }
+
+       #wrap .bootom .bottom2  {
+
+           display: flex;
+           justify-content: center;
+           align-content: center;
+
+       }
+       #wrap .bootom span{
+           flex: 1;
+           margin: auto;
+
+           font-size:12px ;
+           color: #5d656b;
+           text-align: center;
+       }
+       #wrap .bootom span .iconfont{
+
+           width: 22px;
+           height: 100%;
+           font-size: 20px;
+       }
+       a{
+           text-decoration: none;
+           color:#5d656b;
+
+       }
+   </style>
+<body>
+<div id="wrap">
+
+     <div id="head">
+         <ul>
+             <li><div style="color: rgb(255, 80, 0); border-bottom: 2px solid rgb(255, 80, 0);">全部</div></li><li>待付款</li><li>待发货</li><li>待收货</li><li>待评价</li>
+
+         </ul>
+     </div>
+    <!--补位-->
+    <div style="width: 100%;height: 40px"> </div>
+
+    <!--搜索-->
+    <div id="seek">
+        <input class="iconfont" type="text" placeholder=" &#xe63c;搜索全部订单">
+        <div>搜索</div>
+
+    </div>
+
+
+    <div id="body">
+        <div class="one">
+            <div class="top">
+                <div><img src="//gw.alicdn.com/tfs/TB1LmH7SXXXXXXYXFXXXXXXXXXX-63-63.png_50x50_.webp"><span>wze旗舰店</span></div>
+                <div>交易成功</div>
+
+            </div>
+
+            <div class="body1">
+                <img src="//img.alicdn.com/imgextra/i1/3307102283/O1CN01lGPLXe1SjeiZ962SN_!!3307102283.jpg_200x200.jpg">
+                <div>
+                    <span>【双11狂欢价】工装裤男士春秋季2019新款宽松休闲束脚裤潮牌九分裤子男韩版潮流</span>
+                    <span style="font-size: 12px;color: #999999;margin-top: 2%">黑色；2xL</span>
+                    <span style="color: #ff5000;font-size: 12px">七天无理由退换</span>
+                </div>
+
+
+                <div style="width:54px;height: 40px "><span style=" width:54px;height: 40px">￥32.40</span>
+                     <span style=" width:54px;height: 40px;margin-left: 10%;font-size: 12px;color: #999999">x1</span>
+                </div>
+            </div>
+
+            <div class="body2"><span style="font-size: 12px;color: #333333;">保险服务</span></div>
+
+            <div class="body3">
+                <span>总价￥32.40</span><span><b>实付款￥32.40</b></span></div>
+
+            <div class="body4">
+                <div><span>更多</span></div>
+                <div>申请开票</div>
+                <div>挑选服务</div>
+                <div>换了卖钱</div>
+            </div>
+
+
+
+        </div>
+        <div class="one">
+            <div class="top">
+                <div><img src="//gw.alicdn.com/tfs/TB1LmH7SXXXXXXYXFXXXXXXXXXX-63-63.png_50x50_.webp"><span>Nike官方旗舰店</span></div>
+                <div>交易成功</div>
+
+            </div>
+
+            <div class="body1">
+                <img src="//img.alicdn.com/imgextra/i1/3422484362/O1CN01vQUz7y1i5qCHJsHOD_!!3422484362.jpg_200x200.jpg">
+                <div>
+                    <span>【双11狂欢价】空军一号2019秋冬季新款男鞋韩版休闲百搭潮流增高帮保暖板鞋子男</span>
+                    <span style="font-size: 12px;color: #999999;margin-top: 2%">Z163【白灰】;42[标准码]</span>
+                    <span style="color: #ff5000;font-size: 12px">七天无理由退换</span>
+                </div>
+
+
+                <div style="width:54px;height: 40px "><span style=" width:54px;height: 40px">￥688.80</span>
+                    <span style=" width:54px;height: 40px;margin-left: 10%;font-size: 12px;color: #999999">x1</span>
+                </div>
+            </div>
+
+            <div class="body2"><span style="font-size: 12px;color: #333333;">保险服务</span></div>
+
+            <div class="body3">
+                <span>总价￥688.80</span><span><b>实付款￥688.80</b></span></div>
+
+            <div class="body4">
+                <div><span>更多</span></div>
+                <div>申请开票</div>
+                <div>挑选服务</div>
+                <div>换了卖钱</div>
+            </div>
+
+
+
+        </div>
+        <div class="one">
+            <div class="top">
+                <div><img src="//gw.alicdn.com/tfs/TB1LmH7SXXXXXXYXFXXXXXXXXXX-63-63.png_50x50_.webp"><span>keritisn宅先生旗舰店</span></div>
+                <div>交易成功</div>
+
+            </div>
+
+            <div class="body1">
+                <img src="//img.alicdn.com/imgextra/i1/3934167093/TB2mPU1cPrguuRjy0FeXXXcbFXa_!!3934167093.jpg_200x200.jpg">
+                <div>
+                    <span>【双11狂欢价】2018新款潮流棉服男士韩版宽松大码棉衣冬季加厚棉袄中长款面包服</span>
+                    <span style="font-size: 12px;color: #999999;margin-top: 2%">MY31黑色+情侣款手套两双;2XL</span>
+                    <span style="color: #ff5000;font-size: 12px">七天无理由退换 公益捐赠2.00元</span>
+                </div>
+
+
+                <div style="width:54px;height: 40px "><span style=" width:54px;height: 40px">￥188.00</span>
+                    <span style=" width:54px;height: 40px;margin-left: 10%;font-size: 12px;color: #999999">x1</span>
+                </div>
+            </div>
+
+            <div class="body2"><span style="font-size: 12px;color: #333333;">保险服务</span></div>
+
+            <div class="body3">
+                <span>总价￥188.00</span><span><b>实付款￥188.00</b></span></div>
+
+            <div class="body4">
+                <div><span>更多</span></div>
+                <div>申请开票</div>
+                <div>挑选服务</div>
+                <div>删除订单</div>
+            </div>
+
+
+
+        </div>
+
+           <div style="width: 100%;height: 100px"></div>
+
+    </div>
+
+    <!--固定栏-->
+ <div class="bootom">
+     <div class="bottom2">
+         <span> <a href="index.html"><span class="iconfont">&#xe60d;</span>  <br>首页</a></span>
+         <span> <a href="shopping_trolley2.html"><span  class="iconfont">&#xe63b;</span><br> 购物车</a></span>
+         <span>   <span  class="iconfont">&#xe6b9;</span><br> 订单列表</span>
+         <span>   <span  class="iconfont">&#xe62f;</span><br> 淘宝</span>
+         <span>  <span  class="iconfont">&#xe626;</span> <br>更多</span>
+
+     </div>
+ </div>
+
+</div>
+</body>
+</html>
